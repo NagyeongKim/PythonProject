@@ -10,12 +10,13 @@ cursor = conn.cursor()
 name = input("사원의 이름을 입력하세요: ")
 
 
-sql= 'select * from emp where ename like :name'
+#sql= 'select * from emp where ename like :name'
 
 
 #cursor.execute("select * from emp where ename '%'") # 세미콜론 안적음
 
-cursor.execute(sql,name=name)
+cursor.execute("select * from emp where deptno= 10")
+#cursor.execute(sql,name=name)
 
 for item in cursor:
         print(item[1],item[5])
