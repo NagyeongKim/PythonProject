@@ -1,3 +1,4 @@
+#pip install cx_Oracle
 import cx_Oracle
 from matplotlib.pyplot import connect
 
@@ -26,6 +27,7 @@ for item in cursor:
 
 
 conn.close()
+
 
 
 # 1. EMP 테이블에 job을 입력받아 해당 job인 사원을 출력하세요
