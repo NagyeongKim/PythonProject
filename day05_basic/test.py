@@ -1,3 +1,5 @@
+#재고관리시스템
+
 import cx_Oracle
 
 conn = cx_Oracle.connect('scott','tiger','localhost:1521/XE')
