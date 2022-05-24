@@ -3,7 +3,7 @@ from matplotlib.pyplot import connect
 
 
 #연결
-conn = cx_Oracle.connect('scott','tiger','192.168.1.10:1521/XE')
+conn = cx_Oracle.connect('scott','tiger','localhost:1521/XE')
 
 cursor = conn.cursor()
 
