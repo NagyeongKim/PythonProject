@@ -1,6 +1,7 @@
 #재고관리시스템수정
 
 import cx_Oracle
+import re
 
 conn = cx_Oracle.connect('scott','tiger','localhost:1521/XE')
 cursor = conn.cursor()
